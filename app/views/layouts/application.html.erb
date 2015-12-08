@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>Worldfactbook</title>
+<head></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
   <header>
+  <h1 id = 'MainHeader'>The World Fact Book</h1>
     <nav>
       <ul>
         <li> <%= link_to('Countries', countries_path)%></li>

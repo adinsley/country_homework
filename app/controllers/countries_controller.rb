@@ -41,7 +41,7 @@ class CountriesController < ApplicationController
 
 private
 
-  def team_params
+  def country_params
     params.require(:country).permit(:name, :flag, :population, :GDP, :capital)
   end
 

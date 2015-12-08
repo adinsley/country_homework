@@ -1,0 +1,23 @@
+<%= form_for @country do |f| %>
+<ul>
+
+  <li><%=f.label :name %>
+  <%=f.text_field :name %></li>
+  <br>
+  <li><%=f.label :flag %>
+  <%= f.text_field :flag %></li>
+  <br>
+  <li><%=f.label :population %>
+  <%= f.number_field :population %></li>
+  <br>
+  <li><%=f.label :GDP %>
+  <%= f.text_field :GDP %></li>
+  <br>
+  <li><%=f.label :capital %>
+  <%= f.text_field :capital %></li>
+
+  <br>
+  <%= f.submit "Create Country!" %>
+<%end%>
+
+</ul>

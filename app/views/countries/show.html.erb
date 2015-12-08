@@ -1,0 +1,10 @@
+
+<h1><%=@country.name%></h1>
+
+  <p>Flag Image: <img src="<%=@country.flag%>" id = "flags"> </p>
+  <p>Population: <%=@country.population%> </p>
+  <p>GDP last year: <%=@country.GDP%> </p>
+  <p>Capital City: <%=@country.capital%> </p>
+
+  <%= button_to('Delete Country', country_path(@country), method: :delete, data: {confirm: 'Delete are you sure?'})%>
+ <%= button_to("Edit Country Data", edit_country_path(@country), method: :get)%>
