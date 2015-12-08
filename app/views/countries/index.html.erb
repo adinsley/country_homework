@@ -1,0 +1,17 @@
+<h1>Countries of the World</h1>
+
+<% @countries.each do |country| %>
+
+  <h2><%=country.name%></h2>
+
+    <img src="<%=country.flag%>" id = "flags">
+    <br>
+    <h3>Population: <%=country.population%></h3>
+    <h3>GDP: <%=country.GDP%></h3>
+    <h3>Capital City: <%=country.capital%></h3>
+
+    
+
+
+
+<% end %>
