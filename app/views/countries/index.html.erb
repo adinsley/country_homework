@@ -9,6 +9,7 @@
     <h3>Population: <%=country.population%></h3>
     <h3>GDP: <%=country.GDP%></h3>
     <h3>Capital City: <%=country.capital%></h3>
+    <h3>Currency: <%=country.currency%></h3>
 
     <%= button_to("Show #{country.name}", country_path(country), method: :get)%>
     <%= button_to('Delete Country', country_path(country), method: :delete, data: {confirm: 'Delete are you sure?'})%>
